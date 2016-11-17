@@ -490,24 +490,464 @@ if answer2 == "Yes"
       puts "   |   | O ".center(line_width)
       puts "-----------".center(line_width)
       puts "   |   |   ".center(line_width)
+      puts "What is your second move?"
+      secondmove = gets.chomp
+      secondmove2 = secondmove.capitalize
+      if secondmove2 = "UL"
+        puts "You can't do that!"
+        puts " X |   |   ".center(line_width)
+        puts "-----------".center(line_width)
+        puts "   |   | O ".center(line_width)
+        puts "-----------".center(line_width)
+        puts "   |   |   ".center(line_width)
+        puts "What is your second move?"
+        secondmove = gets.chomp
+        secondmove2 = secondmove.capitalize
+        if secondmove2 = "UR"
+          puts " X |   | X ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   |   | O ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   |   |   ".center(line_width)
+        elsif secondmove2 = "ML"
+          puts " X |   |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts " X |   | O ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   |   |   ".center(line_width)
+        elsif secondmove2 = "MM"
+          puts " X |   |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   | X | O ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   |   |   ".center(line_width)
+        elsif secondmove2 = "UM"
+          puts " X | X |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   |   | O ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   |   |   ".center(line_width)
+        elsif secondmove2 = "BL"
+          puts " X |   |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   |   | O ".center(line_width)
+          puts "-----------".center(line_width)
+          puts " X |   |   ".center(line_width)
+        elsif secondmove2 = "BM"
+          puts " X |   |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   |   | O ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   | X |   ".center(line_width)
+        elsif secondmove2 = "BR"
+          puts " X |   |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   |   | O ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   |   | X ".center(line_width)
+        end
+      elsif secondmove2 = "MR"
+        puts "You can't do that!"
+        puts " X |   |   ".center(line_width)
+        puts "-----------".center(line_width)
+        puts "   |   | O ".center(line_width)
+        puts "-----------".center(line_width)
+        puts "   |   |   ".center(line_width)
+        puts "What is your second move?"
+        secondmove = gets.chomp
+        secondmove2 = secondmove.capitalize
+        if secondmove2 = "UR"
+          puts " X |   | X ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   |   | O ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   |   |   ".center(line_width)
+        elsif secondmove2 = "ML"
+          puts " X |   |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts " X |   | O ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   |   |   ".center(line_width)
+        elsif secondmove2 = "MM"
+          puts " X |   |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   | X | O ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   |   |   ".center(line_width)
+        elsif secondmove2 = "UM"
+          puts " X | X |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   |   | O ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   |   |   ".center(line_width)
+        elsif secondmove2 = "BL"
+          puts " X |   |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   |   | O  ".center(line_width)
+          puts "-----------".center(line_width)
+          puts " X |   |   ".center(line_width)
+        elsif secondmove2 = "BM"
+          puts " X |   |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   |   | O ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   | X |   ".center(line_width)
+        elsif secondmove2 = "BR"
+          puts " X |   |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   |   | O ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   |   | X ".center(line_width)
+        end
+      end
     elsif  computermove == 6
       puts " X |   |   ".center(line_width)
       puts "-----------".center(line_width)
       puts "   |   |   ".center(line_width)
       puts "-----------".center(line_width)
       puts " O |   |   ".center(line_width)
+      puts "What is your second move?"
+      secondmove = gets.chomp
+      secondmove2 = secondmove.capitalize
+      if secondmove2 = "UL"
+        puts "You can't do that!"
+        puts " X |   |   ".center(line_width)
+        puts "-----------".center(line_width)
+        puts "   |   |   ".center(line_width)
+        puts "-----------".center(line_width)
+        puts " O |   |   ".center(line_width)
+        puts "What is your second move?"
+        secondmove = gets.chomp
+        secondmove2 = secondmove.capitalize
+        if secondmove2 = "UR"
+          puts " X |   | X ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   |   |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts " O |   |   ".center(line_width)
+        elsif secondmove2 = "ML"
+          puts " X |   |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts " X |   |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts " O |   |   ".center(line_width)
+        elsif secondmove2 = "MM"
+          puts " X |   |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   | X |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts " O |   |   ".center(line_width)
+        elsif secondmove2 = "MR"
+          puts " X |   |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   |   | X ".center(line_width)
+          puts "-----------".center(line_width)
+          puts " O |   |   ".center(line_width)
+        elsif secondmove2 = "UM"
+          puts " X | X |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   |   |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts " O |   |   ".center(line_width)
+        elsif secondmove2 = "BM"
+          puts " X |   |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   |   |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts " O | X |   ".center(line_width)
+        elsif secondmove2 = "BR"
+          puts " X |   |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   |   |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts " O |   | X ".center(line_width)
+        end
+      elsif secondmove2 = "BL"
+        puts "You can't do that!"
+        puts " X |   |   ".center(line_width)
+        puts "-----------".center(line_width)
+        puts "   |   |   ".center(line_width)
+        puts "-----------".center(line_width)
+        puts " O |   |   ".center(line_width)
+        puts "What is your second move?"
+        secondmove = gets.chomp
+        secondmove2 = secondmove.capitalize
+        if secondmove2 = "UR"
+          puts " X | O | X ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   |   |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   |   |   ".center(line_width)
+        elsif secondmove2 = "ML"
+          puts " X | O |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts " X |   |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   |   |   ".center(line_width)
+        elsif secondmove2 = "MM"
+          puts " X | O |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   | X |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   |   |   ".center(line_width)
+        elsif secondmove2 = "MR"
+          puts " X | O |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   |   | X ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   |   |   ".center(line_width)
+        elsif secondmove2 = "BL"
+          puts " X | O |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   |   |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts " X |   |   ".center(line_width)
+        elsif secondmove2 = "BM"
+          puts " X | O |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   |   |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   | X |   ".center(line_width)
+        elsif secondmove2 = "BR"
+          puts " X | O |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   |   |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   |   | X ".center(line_width)
+        end
+      end
     elsif computermove == 7
       puts " X |   |   ".center(line_width)
       puts "-----------".center(line_width)
       puts "   |   |   ".center(line_width)
       puts "-----------".center(line_width)
       puts "   | O |   ".center(line_width)
+      puts "What is your second move?"
+      secondmove = gets.chomp
+      secondmove2 = secondmove.capitalize
+      if secondmove2 = "UL"
+        puts "You can't do that!"
+        puts " X |   |   ".center(line_width)
+        puts "-----------".center(line_width)
+        puts "   |   |   ".center(line_width)
+        puts "-----------".center(line_width)
+        puts "   | O |   ".center(line_width)
+        puts "What is your second move?"
+        secondmove = gets.chomp
+        secondmove2 = secondmove.capitalize
+        if secondmove2 = "UR"
+          puts " X |   | X ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   |   |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   | O |   ".center(line_width)
+        elsif secondmove2 = "ML"
+          puts " X |   |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts " X |   |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   | O |   ".center(line_width)
+        elsif secondmove2 = "MM"
+          puts " X |   |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   | X |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   | O |   ".center(line_width)
+        elsif secondmove2 = "MR"
+          puts " X |   |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   |   | X ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   | O |   ".center(line_width)
+        elsif secondmove2 = "BL"
+          puts " X |   |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   |   |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts " X | O |   ".center(line_width)
+        elsif secondmove2 = "UM"
+          puts " X | X |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   |   |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   | O |   ".center(line_width)
+        elsif secondmove2 = "BR"
+          puts " X |   |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   |   |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   | O | X ".center(line_width)
+        end
+      elsif secondmove2 = "BM"
+        puts "You can't do that!"
+        puts " X |   |   ".center(line_width)
+        puts "-----------".center(line_width)
+        puts "   |   |   ".center(line_width)
+        puts "-----------".center(line_width)
+        puts "   | O |   ".center(line_width)
+        puts "What is your second move?"
+        secondmove = gets.chomp
+        secondmove2 = secondmove.capitalize
+        if secondmove2 = "UR"
+          puts " X |   | X ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   |   |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   | O |   ".center(line_width)
+        elsif secondmove2 = "ML"
+          puts " X |   |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts " X |   |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   | O |   ".center(line_width)
+        elsif secondmove2 = "MM"
+          puts " X |   |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   | X |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   | O |   ".center(line_width)
+        elsif secondmove2 = "MR"
+          puts " X |   |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   |   | X ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   | O |   ".center(line_width)
+        elsif secondmove2 = "BL"
+          puts " X |   |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   |   |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts " X | O |   ".center(line_width)
+        elsif secondmove2 = "UM"
+          puts " X | X |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   |   |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   | O |   ".center(line_width)
+        elsif secondmove2 = "BR"
+          puts " X |   |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   |   |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   | O | X ".center(line_width)
+        end
+      end
     elsif computermove == 8
       puts " X |   |   ".center(line_width)
       puts "-----------".center(line_width)
       puts "   |   |   ".center(line_width)
       puts "-----------".center(line_width)
       puts "   |   | O ".center(line_width)
+      puts "What is your second move?"
+      secondmove = gets.chomp
+      secondmove2 = secondmove.capitalize
+      if secondmove2 = "UL"
+        puts "You can't do that!"
+        puts " X |   |   ".center(line_width)
+        puts "-----------".center(line_width)
+        puts "   |   |   ".center(line_width)
+        puts "-----------".center(line_width)
+        puts "   |   | O ".center(line_width)
+        puts "What is your second move?"
+        secondmove = gets.chomp
+        secondmove2 = secondmove.capitalize
+        if secondmove2 = "UR"
+          puts " X |   | X ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   |   |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   |   | O ".center(line_width)
+        elsif secondmove2 = "ML"
+          puts " X |   |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts " X |   |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   |   | O ".center(line_width)
+        elsif secondmove2 = "MM"
+          puts " X |   |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   | X |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   |   | O ".center(line_width)
+        elsif secondmove2 = "MR"
+          puts " X |   |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   |   | X ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   |   | O ".center(line_width)
+        elsif secondmove2 = "BL"
+          puts " X |   |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   |   |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts " X |   | O ".center(line_width)
+        elsif secondmove2 = "BM"
+          puts " X |   |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   |   |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   | X | O ".center(line_width)
+        elsif secondmove2 = "UM"
+          puts " X | X |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   |   |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   |   | o ".center(line_width)
+        end
+      elsif secondmove2 = "BR"
+        puts "You can't do that!"
+        puts " X |   |   ".center(line_width)
+        puts "-----------".center(line_width)
+        puts "   |   |   ".center(line_width)
+        puts "-----------".center(line_width)
+        puts "   |   | O ".center(line_width)
+        puts "What is your second move?"
+        secondmove = gets.chomp
+        secondmove2 = secondmove.capitalize
+        if secondmove2 = "UR"
+          puts " X |   | X ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   |   |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   |   | O ".center(line_width)
+        elsif secondmove2 = "ML"
+          puts " X |   |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts " X |   |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   |   | O ".center(line_width)
+        elsif secondmove2 = "MM"
+          puts " X |   |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   | X |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   |   | O ".center(line_width)
+        elsif secondmove2 = "MR"
+          puts " X |   |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   |   | X ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   |   | O ".center(line_width)
+        elsif secondmove2 = "BL"
+          puts " X |   |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   |   |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts " X |   | O ".center(line_width)
+        elsif secondmove2 = "BM"
+          puts " X |   |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   |   |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   | X | O ".center(line_width)
+        elsif secondmove2 = "UM"
+          puts " X | X |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   |   |   ".center(line_width)
+          puts "-----------".center(line_width)
+          puts "   |   | O ".center(line_width)
+        end
+      end
     end
   end
 end
