@@ -2,7 +2,7 @@ puts "Welcome to Tic-Tac-Toe!"
 puts "Would you like to play?"
 answer = gets.chomp
 answer2 = answer.capitalize
-if answer2 == "Yes"
+if answer2 = "Yes"
   line_width = 50
   puts "   |   |   ".center(line_width)
   puts "-----------".center(line_width)
@@ -10,7 +10,7 @@ if answer2 == "Yes"
   puts "-----------".center(line_width)
   puts "   |   |   ".center(line_width)
   puts "What is your first move?"
-  puts "Syntax(UR=UpperRight, MM=MiddleMiddle)"
+  puts "Syntax(UR==UpperRight, MM==MiddleMiddle)"
   firstmove = gets.chomp
   firstmove2 = firstmove.capitalize
   if firstmove2 = "UL"
@@ -20,7 +20,7 @@ if answer2 == "Yes"
     puts "-----------".center(line_width)
     puts "   |   |   ".center(line_width)
     computermove = rand(8)
-    if computermove == 1
+    if computermove = 1
       puts " X | O |   ".center(line_width)
       puts "-----------".center(line_width)
       puts "   |   |   ".center(line_width)
@@ -45,6 +45,43 @@ if answer2 == "Yes"
           puts "   |   |   ".center(line_width)
           puts "-----------".center(line_width)
           puts "   |   |   ".center(line_width)
+          computermove2 = rand(6)
+          if computermove2 = 1
+            puts " X | O | X ".center(line_width)
+            puts "-----------".center(line_width)
+            puts " O |   |   ".center(line_width)
+            puts "-----------".center(line_width)
+            puts "   |   |   ".center(line_width)
+          elsif computermove2 = 2
+            puts " X | O | X ".center(line_width)
+            puts "-----------".center(line_width)
+            puts "   | O |   ".center(line_width)
+            puts "-----------".center(line_width)
+            puts "   |   |   ".center(line_width)
+          elsif computermove2 = 3
+            puts " X | O | X ".center(line_width)
+            puts "-----------".center(line_width)
+            puts "   |   | O ".center(line_width)
+            puts "-----------".center(line_width)
+            puts "   |   |   ".center(line_width)
+          elsif computermove2 = 4
+            puts " X | O | X ".center(line_width)
+            puts "-----------".center(line_width)
+            puts "   |   |   ".center(line_width)
+            puts "-----------".center(line_width)
+            puts " O |   |   ".center(line_width)
+          elsif computermove2 = 5
+            puts " X | O | X ".center(line_width)
+            puts "-----------".center(line_width)
+            puts "   |   |   ".center(line_width)
+            puts "-----------".center(line_width)
+            puts "   | O |   ".center(line_width)
+          elsif computermove2 = 6
+            puts " X | O | X ".center(line_width)
+            puts "-----------".center(line_width)
+            puts "   |   |   ".center(line_width)
+            puts "-----------".center(line_width)
+            puts "   |   | O ".center(line_width)
         elsif secondmove2 = "ML"
           puts " X | O |   ".center(line_width)
           puts "-----------".center(line_width)
@@ -136,7 +173,7 @@ if answer2 == "Yes"
           puts "   |   | X ".center(line_width)
         end
       end
-    elsif computermove == 2
+    elsif computermove = 2
       puts " X |   | O ".center(line_width)
       puts "-----------".center(line_width)
       puts "   |   |   ".center(line_width)
@@ -252,7 +289,7 @@ if answer2 == "Yes"
           puts "   |   | X ".center(line_width)
         end
       end
-    elsif computermove == 3
+    elsif computermove = 3
       puts " X |   |   ".center(line_width)
       puts "-----------".center(line_width)
       puts " O |   |   ".center(line_width)
@@ -368,7 +405,7 @@ if answer2 == "Yes"
           puts "   |   | X ".center(line_width)
         end
       end
-    elsif computermove == 4
+    elsif computermove = 4
       puts " X |   |   ".center(line_width)
       puts "-----------".center(line_width)
       puts "   | O |   ".center(line_width)
@@ -484,7 +521,7 @@ if answer2 == "Yes"
           puts "   |   | X ".center(line_width)
         end
       end
-    elsif  computermove == 5
+    elsif  computermove = 5
       puts " X |   |   ".center(line_width)
       puts "-----------".center(line_width)
       puts "   |   | O ".center(line_width)
@@ -600,7 +637,7 @@ if answer2 == "Yes"
           puts "   |   | X ".center(line_width)
         end
       end
-    elsif  computermove == 6
+    elsif  computermove = 6
       puts " X |   |   ".center(line_width)
       puts "-----------".center(line_width)
       puts "   |   |   ".center(line_width)
@@ -716,7 +753,7 @@ if answer2 == "Yes"
           puts "   |   | X ".center(line_width)
         end
       end
-    elsif computermove == 7
+    elsif computermove = 7
       puts " X |   |   ".center(line_width)
       puts "-----------".center(line_width)
       puts "   |   |   ".center(line_width)
@@ -832,7 +869,7 @@ if answer2 == "Yes"
           puts "   | O | X ".center(line_width)
         end
       end
-    elsif computermove == 8
+    elsif computermove = 8
       puts " X |   |   ".center(line_width)
       puts "-----------".center(line_width)
       puts "   |   |   ".center(line_width)
