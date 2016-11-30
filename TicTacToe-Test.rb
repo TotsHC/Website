@@ -1,8 +1,8 @@
 puts "Welcome to Tic-Tac-Toe!"
 puts "Would you like to play?"
 answer = gets.chomp
-answer2 = answer.capitalize
-if answer2 = "Yes"
+answer2 = answer.downcase
+if answer2 == "yes"
   line_width = 50
   puts "   |   |   ".center(line_width)
   puts "-----------".center(line_width)
@@ -12,15 +12,15 @@ if answer2 = "Yes"
   puts "What is your first move?"
   puts "Syntax(UR==UpperRight, MM==MiddleMiddle)"
   firstmove = gets.chomp
-  firstmove2 = firstmove.capitalize
-  if firstmove2 = "UL"
+  firstmove2 = firstmove.upcase
+  if firstmove2 == "UL"
     puts " X |   |   ".center(line_width)
     puts "-----------".center(line_width)
     puts "   |   |   ".center(line_width)
     puts "-----------".center(line_width)
     puts "   |   |   ".center(line_width)
     computermove = rand(8)
-    if computermove = 1
+    if computermove.str == '1'
       puts " X | O |   ".center(line_width)
       puts "-----------".center(line_width)
       puts "   |   |   ".center(line_width)
@@ -28,7 +28,7 @@ if answer2 = "Yes"
       puts "   |   |   ".center(line_width)
       puts "What is your second move?"
       secondmove = gets.chomp
-      secondmove2 = secondmove.capitalize
+      secondmove2 = secondmove.upcase
       if secondmove2 = "UL"
         puts "You can't do that!"
         puts " X | O |   ".center(line_width)
@@ -38,7 +38,7 @@ if answer2 = "Yes"
         puts "   |   |   ".center(line_width)
         puts "What is your second move?"
         secondmove = gets.chomp
-        secondmove2 = secondmove.capitalize
+        secondmove2 = secondmove.upcase
         if secondmove2 = "UR"
           puts " X | O | X ".center(line_width)
           puts "-----------".center(line_width)
@@ -82,6 +82,7 @@ if answer2 = "Yes"
             puts "   |   |   ".center(line_width)
             puts "-----------".center(line_width)
             puts "   |   | O ".center(line_width)
+          end
         elsif secondmove2 = "ML"
           puts " X | O |   ".center(line_width)
           puts "-----------".center(line_width)
@@ -128,7 +129,7 @@ if answer2 = "Yes"
         puts "   |   |   ".center(line_width)
         puts "What is your second move?"
         secondmove = gets.chomp
-        secondmove2 = secondmove.capitalize
+        secondmove2 = secondmove.upcase
         if secondmove2 = "UR"
           puts " X | O | X ".center(line_width)
           puts "-----------".center(line_width)
@@ -173,7 +174,7 @@ if answer2 = "Yes"
           puts "   |   | X ".center(line_width)
         end
       end
-    elsif computermove = 2
+    elsif computermove.str == '2'
       puts " X |   | O ".center(line_width)
       puts "-----------".center(line_width)
       puts "   |   |   ".center(line_width)
@@ -181,7 +182,7 @@ if answer2 = "Yes"
       puts "   |   |   ".center(line_width)
       puts "What is your second move?"
       secondmove = gets.chomp
-      secondmove2 = secondmove.capitalize
+      secondmove2 = secondmove.upcase
       if secondmove2 = "UL"
         puts "You can't do that!"
         puts " X |   | O ".center(line_width)
@@ -191,7 +192,7 @@ if answer2 = "Yes"
         puts "   |   |   ".center(line_width)
         puts "What is your second move?"
         secondmove = gets.chomp
-        secondmove2 = secondmove.capitalize
+        secondmove2 = secondmove.upcase
         if secondmove2 = "UM"
           puts " X | X | O ".center(line_width)
           puts "-----------".center(line_width)
@@ -244,7 +245,7 @@ if answer2 = "Yes"
         puts "   |   |   ".center(line_width)
         puts "What is your second move?"
         secondmove = gets.chomp
-        secondmove2 = secondmove.capitalize
+        secondmove2 = secondmove.upcase
         if secondmove2 = "UM"
           puts " X | X | O ".center(line_width)
           puts "-----------".center(line_width)
@@ -297,7 +298,7 @@ if answer2 = "Yes"
       puts "   |   |   ".center(line_width)
       puts "What is your second move?"
       secondmove = gets.chomp
-      secondmove2 = secondmove.capitalize
+      secondmove2 = secondmove.upcase
       if secondmove2 = "UL"
         puts "You can't do that!"
         puts " X |   |   ".center(line_width)
@@ -307,7 +308,7 @@ if answer2 = "Yes"
         puts "   |   |   ".center(line_width)
         puts "What is your second move?"
         secondmove = gets.chomp
-        secondmove2 = secondmove.capitalize
+        secondmove2 = secondmove.upcase
         if secondmove2 = "UM"
           puts " X | X |   ".center(line_width)
           puts "-----------".center(line_width)
@@ -360,7 +361,7 @@ if answer2 = "Yes"
         puts "   |   |   ".center(line_width)
         puts "What is your second move?"
         secondmove = gets.chomp
-        secondmove2 = secondmove.capitalize
+        secondmove2 = secondmove.upcase
         if secondmove2 = "UM"
           puts " X | X |   ".center(line_width)
           puts "-----------".center(line_width)
@@ -413,7 +414,7 @@ if answer2 = "Yes"
       puts "   |   |   ".center(line_width)
       puts "What is your second move?"
       secondmove = gets.chomp
-      secondmove2 = secondmove.capitalize
+      secondmove2 = secondmove.upcase
       if secondmove2 = "UL"
         puts "You can't do that!"
         puts " X |   |   ".center(line_width)
@@ -423,7 +424,7 @@ if answer2 = "Yes"
         puts "   |   |   ".center(line_width)
         puts "What is your second move?"
         secondmove = gets.chomp
-        secondmove2 = secondmove.capitalize
+        secondmove2 = secondmove.upcase
         if secondmove2 = "UM"
           puts " X | X |   ".center(line_width)
           puts "-----------".center(line_width)
@@ -476,7 +477,7 @@ if answer2 = "Yes"
         puts "   |   |   ".center(line_width)
         puts "What is your second move?"
         secondmove = gets.chomp
-        secondmove2 = secondmove.capitalize
+        secondmove2 = secondmove.upcase
         if secondmove2 = "UR"
           puts " X |   | X ".center(line_width)
           puts "-----------".center(line_width)
@@ -529,7 +530,7 @@ if answer2 = "Yes"
       puts "   |   |   ".center(line_width)
       puts "What is your second move?"
       secondmove = gets.chomp
-      secondmove2 = secondmove.capitalize
+      secondmove2 = secondmove.upcase
       if secondmove2 = "UL"
         puts "You can't do that!"
         puts " X |   |   ".center(line_width)
@@ -539,7 +540,7 @@ if answer2 = "Yes"
         puts "   |   |   ".center(line_width)
         puts "What is your second move?"
         secondmove = gets.chomp
-        secondmove2 = secondmove.capitalize
+        secondmove2 = secondmove.upcase
         if secondmove2 = "UR"
           puts " X |   | X ".center(line_width)
           puts "-----------".center(line_width)
@@ -592,7 +593,7 @@ if answer2 = "Yes"
         puts "   |   |   ".center(line_width)
         puts "What is your second move?"
         secondmove = gets.chomp
-        secondmove2 = secondmove.capitalize
+        secondmove2 = secondmove.upcase
         if secondmove2 = "UR"
           puts " X |   | X ".center(line_width)
           puts "-----------".center(line_width)
@@ -645,7 +646,7 @@ if answer2 = "Yes"
       puts " O |   |   ".center(line_width)
       puts "What is your second move?"
       secondmove = gets.chomp
-      secondmove2 = secondmove.capitalize
+      secondmove2 = secondmove.upcase
       if secondmove2 = "UL"
         puts "You can't do that!"
         puts " X |   |   ".center(line_width)
@@ -655,7 +656,7 @@ if answer2 = "Yes"
         puts " O |   |   ".center(line_width)
         puts "What is your second move?"
         secondmove = gets.chomp
-        secondmove2 = secondmove.capitalize
+        secondmove2 = secondmove.upcase
         if secondmove2 = "UR"
           puts " X |   | X ".center(line_width)
           puts "-----------".center(line_width)
@@ -708,7 +709,7 @@ if answer2 = "Yes"
         puts " O |   |   ".center(line_width)
         puts "What is your second move?"
         secondmove = gets.chomp
-        secondmove2 = secondmove.capitalize
+        secondmove2 = secondmove.upcase
         if secondmove2 = "UR"
           puts " X | O | X ".center(line_width)
           puts "-----------".center(line_width)
@@ -761,7 +762,7 @@ if answer2 = "Yes"
       puts "   | O |   ".center(line_width)
       puts "What is your second move?"
       secondmove = gets.chomp
-      secondmove2 = secondmove.capitalize
+      secondmove2 = secondmove.upcase
       if secondmove2 = "UL"
         puts "You can't do that!"
         puts " X |   |   ".center(line_width)
@@ -771,7 +772,7 @@ if answer2 = "Yes"
         puts "   | O |   ".center(line_width)
         puts "What is your second move?"
         secondmove = gets.chomp
-        secondmove2 = secondmove.capitalize
+        secondmove2 = secondmove.upcase
         if secondmove2 = "UR"
           puts " X |   | X ".center(line_width)
           puts "-----------".center(line_width)
@@ -824,7 +825,7 @@ if answer2 = "Yes"
         puts "   | O |   ".center(line_width)
         puts "What is your second move?"
         secondmove = gets.chomp
-        secondmove2 = secondmove.capitalize
+        secondmove2 = secondmove.upcase
         if secondmove2 = "UR"
           puts " X |   | X ".center(line_width)
           puts "-----------".center(line_width)
@@ -877,7 +878,7 @@ if answer2 = "Yes"
       puts "   |   | O ".center(line_width)
       puts "What is your second move?"
       secondmove = gets.chomp
-      secondmove2 = secondmove.capitalize
+      secondmove2 = secondmove.upcase
       if secondmove2 = "UL"
         puts "You can't do that!"
         puts " X |   |   ".center(line_width)
@@ -887,7 +888,7 @@ if answer2 = "Yes"
         puts "   |   | O ".center(line_width)
         puts "What is your second move?"
         secondmove = gets.chomp
-        secondmove2 = secondmove.capitalize
+        secondmove2 = secondmove.upcase
         if secondmove2 = "UR"
           puts " X |   | X ".center(line_width)
           puts "-----------".center(line_width)
@@ -940,7 +941,7 @@ if answer2 = "Yes"
         puts "   |   | O ".center(line_width)
         puts "What is your second move?"
         secondmove = gets.chomp
-        secondmove2 = secondmove.capitalize
+        secondmove2 = secondmove.upcase
         if secondmove2 = "UR"
           puts " X |   | X ".center(line_width)
           puts "-----------".center(line_width)
